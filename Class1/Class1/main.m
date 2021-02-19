@@ -23,6 +23,11 @@ int main(int argc, const char * argv[]) {
         NSLog(@"p1 - %p", p1);
         NSLog(@"p2 - %p", p2);
         NSLog(@"p3 - %p", p3);
+        p1.peopleName = @"李四";
+        NSLog(@"p1.peopleName - %@", p1.peopleName);
+        NSLog(@"p2.peopleName - %@", p2.peopleName);
+        NSLog(@"p3.peopleName - %@", p3.peopleName);
+    
     }
     return 0;
 }

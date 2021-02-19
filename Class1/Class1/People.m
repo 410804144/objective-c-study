@@ -8,5 +8,12 @@
 #import "People.h"
 
 @implementation People
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _peopleName = @"张三";
+    }
+    return self;
+}
 @end
