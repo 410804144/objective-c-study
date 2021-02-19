@@ -10,12 +10,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface People : NSObject
-{
-    // 外部无法直接使用p1->_peopleName获取变量信息，如果需要，则可以添加@public注释（不建议添加该注释，可以使用@property）
-    NSString *_peopleName;
-    int _peopleAge;
-    int _peopleSex;
-}
+// 使用@property后，可以不需要定义变量
+//{
+//    // 外部无法直接使用p1->_peopleName获取变量信息，如果需要，则可以添加@public注释（不建议添加该注释，可以使用@property）
+//    NSString *_peopleName;
+//    int _peopleAge;
+//    int _peopleSex;
+//}
 // 外部可以直接访问属性信息
 @property(nonatomic, strong) NSString *peopleName;
 @end
